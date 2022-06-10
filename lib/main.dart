@@ -1,3 +1,4 @@
+import 'package:design/screens/to_do_design.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -19,11 +20,12 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      initialRoute: 'home_screen',
+      initialRoute: 'to_do_design',
       routes: {
         'basic_design': (_) => const BasicDesignScreen(),
         'scroll_design': (_) => const ScrollDesignScreen(),
         'home_screen': (_) => const HomeScreen(),
+        'to_do_design': (_) => const ToDoDesign(),
       },
     );
   }
